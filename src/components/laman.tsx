@@ -76,10 +76,10 @@ export default function HomePage(): JSX.Element {
         
       </FeatureContainer>
       <BigSection
-        title="Apapun Keluhan"
-       subtitle="Insyaallah Bisa Dibantu Penyembuhannya Dengan Izin ALLOH"
+        title="Terapi pertama GERATIS"
+       subtitle="Kedua dan seterusnya : Sukarela / Seikhlasnya"
       />
-      <Container sx={{ display: "flex", justifyContent: "center", mb: 16 }}>
+      <Container sx={{ display: "flex", justifyContent: "center", mb: 10 }}>
         
       </Container>
       <Box sx={{ mb: 4 }}>
@@ -91,11 +91,11 @@ export default function HomePage(): JSX.Element {
       <Box sx={{ mb: 8 }}>
         <TestimonialSection testimonials={testimonials} />
       </Box>
-      <Box sx={{ mb: 4 }}>
+      <Box sx={{ mb: 8 }}>
         <ContactSection />
       </Box>
       <Container>
-      <Box sx={{ mb: 2 }}>
+      <Box sx={{ mb: 4 }}>
           <Filling/>
       </Box>
       </Container>
