@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import Footer from "./Footer";
-import Header from "./RAB";
+// import Header from "./RAB";
 
 type Props = {
   children: React.ReactNode;
@@ -13,7 +13,7 @@ export default function Layout({ children }: Props): JSX.Element {
         backgroundColor: (theme) => theme.palette.background.default,
       }}
     >
-      <Header />
+      {/* <Header /> */}
       <main>{children}</main>
       <Footer />
     </Box>

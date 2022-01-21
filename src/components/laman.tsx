@@ -9,35 +9,36 @@ import FeatureContainer from "../components/FeatureContainer";
 import FeatureBlocksContainer from "../components/FeatureBlocksContainer";
 import FeatureBlock from "../components/FeatureBlock";
 import BigSection from "../components/BigSection";
-// import CompaniesSection from "../components/CompaniesSection";
-// import Image from "next/image";
-import Filling from "./fillform";
 import TestimonialSection from "../components/TestimonialSection";
 import { testimonials } from "./data/testimonials";
 import ContactSection from "../components/ContactSection";
 import { Ballot, Business, CalendarToday, HomeMini, WhatsApp } from "@mui/icons-material";
-
-const WaText = "Hallo";
-const WaPhone = "6285292609771";
-const Walink = "https://wa.me/"+WaPhone+"/?text="+WaText;
+import scrollIntoView from 'scroll-into-view-if-needed'
+import FeatureGridContainer from "./FeatureGridContainer";
+import ImageBlock from "./ImageBlock";
 
 export default function HomePage(): JSX.Element {
   return (
     <Page maxWidth={false}>
       <HeroSection
         title="Terapi Totok 431"
-        subtitle="Tidak ada penyakit yang tidak ada obatnya, Insyaallah sembuh Dengan Izin ALLOH "
+        subtitle="Tidak ada penyakit yang tidak ada obatnya, Insyaallah sembuh Dengan Izin ALLAH "
         image="/assets/totok1.svg"
       >
         {/* <Link href="/react" passHref> */}
-        <Button variant="contained" href={Walink} disableElevation sx={{ mr: 2, mt: 2 }}>
+        
+        <Button variant="contained" onClick={function(){
+          const node = document.getElementById('formpesan')!;
+          scrollIntoView(node, {
+            behavior: 'smooth',
+            scrollMode: 'if-needed',
+          });
+        }} disableElevation sx={{ mr: 2, mt: 2 }}>
           Hubungi Kami  <WhatsApp></WhatsApp>
         </Button>
         {/* </Link> */}
         {/* <Link href="/ios" passHref> */}
-        <Button href="/page2" disableElevation sx={{ mr: 2, mt: 2 }}>
-          Informasi
-        </Button>
+       
         {/* </Link> */}
       </HeroSection>
       <div> <br></br></div>
@@ -49,16 +50,62 @@ export default function HomePage(): JSX.Element {
             icon={<Ballot />}
             content={
               <>   
-             <div> Saraf    Syaraf Tulang Belakang, Sakit Sendi, Asam Urat, Lambung, Migren, Fertigo, Lemah Jantung, Dada Sering Sakit, Asma, Tangan dan Kaki sakit digerakkan, Ambeyen dll.</div>
+            
               </>
             }
+            
           />
+
+          <FeatureBlocksContainer>
+          <ImageBlock
+            title="Saraf"
+            image="/assets/penyakit/saraf.jpeg"
+          />
+          <ImageBlock
+            title="Syaraf Tulang Belakang"
+            image="/assets/penyakit/tb.jpg"
+          />
+          <ImageBlock
+            title="Sakit Sendi"
+            image="/assets/penyakit/sendi.jpg"
+          />
+          <ImageBlock
+            title="Asam Urat"
+            image="/assets/penyakit/asam_urat.png"
+          />
+          <ImageBlock
+            title="Lambung"
+            image="/assets/penyakit/lambung.jpg"
+          />
+          <ImageBlock
+            title="Migrain"
+            image="/assets/penyakit/migrain.jpeg"
+          />
+          <ImageBlock
+            title="vertigo"
+            image="/assets/penyakit/vertigo.jpg"
+          />
+          <ImageBlock
+            title="Lemah Jantung"
+            image="/assets/penyakit/lemahjantung.jpg"
+          />
+          <ImageBlock
+            title="Asma"
+            image="/assets/penyakit/asma.jpg"
+          />
+          <ImageBlock
+            title="Ambeyen"
+            image="/assets/penyakit/ambeyen.jpg"
+          />
+
+          </FeatureBlocksContainer>
+         
           <FeatureBlock
             title="Jadwal Buka"
             icon={<CalendarToday />}
             content={
               <>                            
-              <div> Senin, Rabo, Sabtu.</div>
+              <div> Senin, Rabu, Sabtu.</div>
                 
               </>
             }
@@ -68,7 +115,7 @@ export default function HomePage(): JSX.Element {
             icon={<Business />}
             content={
               <>
-              Alamat : xxxxxxxxxxxxxx
+              Alamat : Ruko Pasar Puro Di Bawah Lampu Lip Lop/ Lampu Emergency
 
               </>
             }
@@ -76,7 +123,7 @@ export default function HomePage(): JSX.Element {
         
       </FeatureContainer>
       <BigSection
-        title="Terapi pertama GERATIS"
+        title="Terapi pertama Gratis"
        subtitle="Kedua dan seterusnya : Sukarela / Seikhlasnya"
       />
       <Container sx={{ display: "flex", justifyContent: "center", mb: 10 }}>
@@ -94,11 +141,7 @@ export default function HomePage(): JSX.Element {
       <Box sx={{ mb: 8 }}>
         <ContactSection />
       </Box>
-      <Container>
-      <Box sx={{ mb: 4 }}>
-          <Filling/>
-      </Box>
-      </Container>
+      
     </Page>
   );
 }

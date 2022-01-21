@@ -9,12 +9,15 @@
     "@mui/material": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "lottie-react": "^2.2.1",
     "markdown-to-jsx": "^7.1.5",
     "react": "latest",
+    "react-cssfx-loading": "^1.0.3",
     "react-dom": "latest",
     "react-router-dom": "^6.2.1",
     "react-scripts": "latest",
     "recharts": "^2.1.8",
+    "scroll-into-view-if-needed": "^2.2.28",
     "typescript": "latest"
   },
   "scripts": {

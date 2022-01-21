@@ -1,6 +1,6 @@
 export default interface Testimonial {
   name: string;
-  title: string;
+  rating: number;
   content: string;
   image?: string;
 }

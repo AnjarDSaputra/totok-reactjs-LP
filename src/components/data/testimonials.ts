@@ -2,45 +2,32 @@ import Testimonial from "../interfaces/Testimonial";
 
 export const testimonials: Testimonial[] = [
   {
-    name: "Chantal Beverly",
-    title: "Creative Director, UpStart",
+    name: "Hap sari",
+    rating: 5,
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "/assets/testimonials/person_1.jpg",
+      "Awal mulanya kayak percaya gk percaya setelah dicoba enak di badan. Gak usah ragu2 kalo mau terapi dsini. Testimoni nya udah bnyak bnget. Bisa mengobati berbagai macam penyakit juga. Yang pasti pengobatan nya herbal tanpa bahan kimia.",
+    image: "https://lh3.googleusercontent.com/a-/AOh14Gjj5k_zJvS_YmQN4-ZxKjmOJ3tzizwxsO3rPl-C=w71-h71-p-rp-mo-br100",
   },
   {
-    name: "Clem Alissa",
-    title: "CEO, Quik",
+    name: "Heppi Munif",
+    rating: 5,
     content:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    image: "/assets/testimonials/person_2.jpg",
+      "Badan terasa lebih enak setelah pijat. Dan teh herbal luar biasa enak di badan",
+    image: "https://lh3.googleusercontent.com/a/AATXAJyRmnHo0WyDvCold2xZfEBCpY_Xwp7shxNuhvyL=w71-h71-p-rp-mo-br100",
   },
   {
-    name: "Darnell Jorja",
-    title: "CFO, SimplyFresh",
+    name: "MGMP Bahasa Jawa",
+    rating: 5,
     content:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: "/assets/testimonials/person_3.jpg",
+      "Mantab pokoknya..cesspleng pijatannya..hilang segala penyakit..barokallaah",
+    image: "https://lh3.googleusercontent.com/a-/AOh14GiYiGNQSxw2VkZ_dK0IcsN3IHrfg0SrUv87vK4Z=w71-h71-p-rp-mo-br100",
   },
   {
-    name: "Dorean Sophy",
-    title: "Head of Marketing, Simplex",
+    name: "Cak Antok",
+    rating: 5,
     content:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    image: "/assets/testimonials/person_4.jpg",
+      "Terimakasih atas terapinya... Alhamdulillah,  Jadi sehat",
+    image: "https://lh3.googleusercontent.com/a/AATXAJwpC4JrOy-XhA1yTTrcOrvrxKL1JgdBJm5ODkA=w71-h71-p-rp-mo-br100",
   },
-  {
-    name: "Kimbra Kassandra",
-    title: "CEO, GreenTech",
-    content:
-      "Pulvinar pellentesque habitant morbi tristique senectus. A cras semper auctor neque vitae tempus quam pellentesque.",
-    image: "/assets/testimonials/person_5.jpg",
-  },
-  {
-    name: "Rhys Velda",
-    title: "Lead Engineer, Starship inc",
-    content:
-      "Aenean et tortor at risus viverra adipiscing at. Quisque sagittis purus sit amet volutpat consequat mauris nunc.",
-    image: "/assets/testimonials/person_6.jpg",
-  },
+ 
 ];

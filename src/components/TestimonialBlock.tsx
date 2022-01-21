@@ -1,7 +1,7 @@
 import React from "react";
 import { Avatar, Grid, Typography, Card } from "@mui/material";
 import Testimonial from "./interfaces/Testimonial";
-
+import Rating from "@mui/material/Rating"
 interface Props {
   testimonial: Testimonial;
 }
@@ -22,7 +22,7 @@ export default function TestimonialBlock({ testimonial }: Props): JSX.Element {
           ) : null}
           <Grid item xs>
             <Typography variant="h4">{testimonial.name}</Typography>
-            <Typography variant="caption">{testimonial.title}</Typography>
+            <Rating name="read-only" value={testimonial.rating} readOnly />
           </Grid>
         </Grid>
         <Typography variant="body2">{testimonial.content}</Typography>

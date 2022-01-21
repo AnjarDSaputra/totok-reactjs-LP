@@ -6,7 +6,7 @@ type Props = {
   title: string;
   subtitle: string;
   image: string;
-  children?: React.ReactNodeArray;
+  children?: React.ReactNode;
 };
 
 export default function HeroSection({
