@@ -22,12 +22,12 @@ export const testimonials: Testimonial[] = [
       "Mantab pokoknya..cesspleng pijatannya..hilang segala penyakit..barokallaah",
     image: "https://lh3.googleusercontent.com/a-/AOh14GiYiGNQSxw2VkZ_dK0IcsN3IHrfg0SrUv87vK4Z=w71-h71-p-rp-mo-br100",
   },
-  {
-    name: "Cak Antok",
-    rating: 5,
-    content:
-      "Terimakasih atas terapinya... Alhamdulillah,  Jadi sehat",
-    image: "https://lh3.googleusercontent.com/a/AATXAJwpC4JrOy-XhA1yTTrcOrvrxKL1JgdBJm5ODkA=w71-h71-p-rp-mo-br100",
-  },
- 
+  // {
+  //   name: "Cak Antok",
+  //   rating: 5,
+  //   content:
+  //     "Terimakasih atas terapinya... Alhamdulillah,  Jadi sehat",
+  //   image: "https://lh3.googleusercontent.com/a/AATXAJwpC4JrOy-XhA1yTTrcOrvrxKL1JgdBJm5ODkA=w71-h71-p-rp-mo-br100",
+  // },
+
 ];

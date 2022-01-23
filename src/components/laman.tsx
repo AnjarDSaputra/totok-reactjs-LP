@@ -47,7 +47,7 @@ export default function HomePage(): JSX.Element {
        
           <FeatureBlock
             title="Membantu Penyembuhan"
-            icon={<Ballot />}
+            // icon={<Ballot />}
             content={
               <>   
             
@@ -82,7 +82,7 @@ export default function HomePage(): JSX.Element {
             image="/assets/penyakit/migrain.jpeg"
           />
           <ImageBlock
-            title="vertigo"
+            title="Vertigo"
             image="/assets/penyakit/vertigo.jpg"
           />
           <ImageBlock
@@ -102,17 +102,17 @@ export default function HomePage(): JSX.Element {
          
           <FeatureBlock
             title="Jadwal Buka"
-            icon={<CalendarToday />}
+            // icon={<CalendarToday />}
             content={
               <>                            
-              <div> Senin, Rabu, Sabtu.</div>
+              <div> Senin, Rabu, dan Sabtu</div>
                 
               </>
             }
           />
           <FeatureBlock
             title="Datang langsung ke"
-            icon={<Business />}
+            // icon={<Business />}
             content={
               <>
               Alamat : Ruko Pasar Puro Di Bawah Lampu Lip Lop/ Lampu Emergency
