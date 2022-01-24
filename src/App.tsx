@@ -12,6 +12,7 @@ import Layout from "./components/layout/Layout";
 import BarWave from "react-cssfx-loading/lib/FadingDots";
 export default function App() {  
 
+
   const [data, setData] = useState([]);
   const [loading, setloading] = useState<true | null>(null) ;
   const [completed, setcompleted] = useState<true | null>(null);
@@ -20,7 +21,7 @@ export default function App() {
       fetch("https://jsonplaceholder.typicode.com/posts")
         .then((response) => response.json())
         .then((json) => {
-          console.log(json);
+          // console.log(json);
           setData(json);
           setloading(true);
 
@@ -36,7 +37,7 @@ export default function App() {
       {!completed ? (
         <>
           {!loading ? (
-            <Box  sx={{
+            <Box className='LoadingBox' sx={{
               minHeight: "100vh",
               alignItems: "center",
               display: "flex",
@@ -63,6 +64,7 @@ export default function App() {
         </>
       ) : (
         <>
+       
           <Layout>          
           <Laman/>
           </Layout>

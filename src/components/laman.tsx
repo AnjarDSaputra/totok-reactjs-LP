@@ -101,16 +101,17 @@ export default function HomePage(): JSX.Element {
           </FeatureBlocksContainer>
          
           <FeatureBlock
-            title="Jadwal Buka"
+            title="Jadwal Terapi"
             // icon={<CalendarToday />}
             content={
               <>                            
-              <div> Senin, Rabu, dan Sabtu</div>
-                
+              <div> Puro : Senin dan Sabtu</div>
+              <div> Glongong Barat SMP 1 Gondang 300 M : Minggu</div>  
+              <div> Pilangsari Kantin Masjid Basis : Kamis</div>  
               </>
             }
           />
-          <FeatureBlock
+          {/* <FeatureBlock
             title="Datang langsung ke"
             // icon={<Business />}
             content={
@@ -119,7 +120,7 @@ export default function HomePage(): JSX.Element {
 
               </>
             }
-          />
+          /> */}
         
       </FeatureContainer>
       <BigSection

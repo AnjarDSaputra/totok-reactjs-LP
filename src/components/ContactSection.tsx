@@ -4,11 +4,10 @@ import { Typography, Box, Grid, Container, Button, Avatar } from "@mui/material"
 import { WhatsApp } from "@mui/icons-material";
 import scrollIntoView from "scroll-into-view-if-needed"
 import Filling from "./fillform";
-
 export default function ContactSection(): JSX.Element {
   return (
     <Container maxWidth="md">
-      <Box id="formpesan" sx={{ backgroundColor: "#C2E8DC", borderRadius: 4, p: 2 }}>
+      <Box id="formpesan" sx={{ borderRadius: 4, p: 2 }}>
         <Grid container alignItems="center" spacing={4}>
           <Grid item xs={12} sm={6}>
             <Typography variant="h2">Mau Mencoba?</Typography>
