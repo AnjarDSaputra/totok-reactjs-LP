@@ -105,9 +105,9 @@ export default function HomePage(): JSX.Element {
             // icon={<CalendarToday />}
             content={
               <>                            
-              <div> Puro : Senin dan Sabtu</div>
-              <div> Glongong Barat SMP 1 Gondang 300 M : Minggu</div>  
-              <div> Pilangsari Kantin Masjid Basis : Kamis</div>  
+              <div> Senin & Sabtu: Ruko Pasar Puro di bawah lampu Lip/Lop</div>
+              <div> Kamis: Pilangsari Kantin Masjid Basis</div>  
+              <div> Minggu: Glongong Barat SMP 1 Gondang 300 M</div>  
               </>
             }
           />
