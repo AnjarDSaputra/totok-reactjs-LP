@@ -23,7 +23,7 @@ const theme = createTheme({
     h2: {
       fontSize: "2.0rem",
       fontWeight: 600,
-      color: "#000000",
+      // color: "#000000",
     },
     h3: {
       fontSize: "1.5rem",
@@ -45,13 +45,13 @@ const theme = createTheme({
     },
     caption: {
       fontSize: "0.9rem",
-      fontWceight: 400,
+      fontWeight: 400,
       // lineHeight: 1.5,
       color: "#85858B",
     },
     subtitle1: {
       fontSize: "1.0rem",
-      fontWceight: 400,
+      fontWeight: 400,
       lineHeight: 1.5,
       color: "#85858B",
     },
@@ -95,6 +95,16 @@ const theme = createTheme({
         },
       },
     },
+    MuiFormHelperText: {
+      styleOverrides: {
+      root: {
+    color: "white",
+          "&$error": {
+         color: "white"
+    }
+      },
+  },
+  },
   },
 });
 

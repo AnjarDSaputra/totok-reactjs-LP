@@ -99,9 +99,11 @@ return (
           </Typography>
         </Grid>
         <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
-          <Container>
+          <Container color="white" >
             <Grid item xs={12} md={12}>
-              <TextField sx={{ mb: 2, marginLeft: 1 }}
+              <TextField sx={{ input: { color: 'white' },
+              label:{color:'white'}
+              ,mb: 2, marginLeft: 1 }}
                 required
                 id="IdNama"
                 name="IdNama"
@@ -110,8 +112,9 @@ return (
                 autoComplete="cc-name"
                 variant="standard" />
             </Grid>
-            <Grid item xs={12} md={12}>
-              <TextField sx={{ mb: 2, marginLeft: 1 }}
+            <Grid  item xs={12} md={12}>
+              <TextField  sx={{ input: { color: 'white' }, underline:{color: 'white'},
+              label:{color:'white'},mb: 2, marginLeft: 1 }}
                 required
                 id="IdAlamat"
                 name="IdAlamat"
@@ -121,7 +124,8 @@ return (
                 variant="standard" />
             </Grid>
             <Grid item xs={12} md={12}>
-              <TextField sx={{ mb: 2, marginLeft: 1 }}
+              <TextField  sx={{ input: { color: 'white' },
+              label:{color:'white'},mb: 2, marginLeft: 1 }}
                 required
                 id="IdHp"
                 name="IdHp"
@@ -131,7 +135,8 @@ return (
                 variant="standard" />
             </Grid>
             <Grid item xs={12} md={12}>
-              <TextField sx={{ mb: 2, marginLeft: 1 }}
+              <TextField  sx={{ input: { color: 'white' },
+              label:{color:'white'},helperText:{ color: 'white'}, mb: 2, marginLeft: 1 }}
                 required
                 id="IdKeluhan"
                 name="IdKeluhan"
@@ -145,7 +150,8 @@ return (
               <Autocomplete
                 options={options}
                 style={{ width: 300 }}
-                renderInput={(params) => <TextField sx={{ mb: 2, marginLeft: 1 }} {...params} label="Kunjungan Terapi" autoComplete="cc-terapi"
+                renderInput={(params) => <TextField  sx={{ input: { color: 'white' },
+                label:{color:'white'},mb: 2, marginLeft: 1 }} {...params} label="Kunjungan Terapi" autoComplete="cc-terapi"
                   name="IdTerapi" id="IdTerapi" variant="outlined" />} />
             </Grid>
             <Grid alignItems="center">

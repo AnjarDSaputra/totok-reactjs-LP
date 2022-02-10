@@ -98,19 +98,8 @@ export default function HomePage(): JSX.Element {
             image="/assets/penyakit/ambeyen.jpg"
           />
 
-          </FeatureBlocksContainer>
-         
-          <FeatureBlock
-            title="Jadwal Terapi"
-            // icon={<CalendarToday />}
-            content={
-              <>                            
-              <div> Senin & Sabtu: Ruko Pasar Puro di bawah lampu Lip/Lop</div>
-              <div> Kamis: Pilangsari Kantin Masjid Basis</div>  
-              <div> Minggu: Glongong Barat SMP 1 Gondang 300 M</div>  
-              </>
-            }
-          />
+          </FeatureBlocksContainer>         
+          
           {/* <FeatureBlock
             title="Datang langsung ke"
             // icon={<Business />}
@@ -123,10 +112,27 @@ export default function HomePage(): JSX.Element {
           /> */}
         
       </FeatureContainer>
-      <BigSection
+
+     
+      <Box sx={{
+        backgroundColor:"#44ad63",
+        color:"white"
+      }}>
+
+      <BigSection 
+            title="Jadwal Terapi"
+            // icon={<CalendarToday />}
+            subtitle="                   
+               Senin & Sabtu: Ruko Pasar Puro di bawah lampu Lip/Lop
+               Kamis: Pilangsari Kantin Masjid Basis  
+               Minggu: Glongong Barat SMP 1 Gondang 300 M  
+              "
+          />
+      <BigSection 
         title="Terapi pertama Gratis"
        subtitle="Kedua dan seterusnya : Sukarela / Seikhlasnya"
       />
+      </Box>
       <Container sx={{ display: "flex", justifyContent: "center", mb: 10 }}>
         
       </Container>
@@ -139,7 +145,10 @@ export default function HomePage(): JSX.Element {
       <Box sx={{ mb: 8 }}>
         <TestimonialSection testimonials={testimonials} />
       </Box>
-      <Box sx={{ mb: 8 }}>
+      <Box sx={{ backgroundColor:"#44ad63",
+                color:"white",
+                // mb: 8 
+                }}>
         <ContactSection />
       </Box>
       
